@@ -17,14 +17,11 @@ Here are instruction on how the binary is built:
 ### Prepare R (from source) and it's dependencies in the docker container:
 - mkdir /prototype
 - cd /prototype
-
 - wget https://cran.r-project.org/src/base/R-3/R-3.3.1.tar.gz
-
 - sudo apt-get install gfortran
 - sudo apt-get install texlive-latex-base
 - sudo apt-get install texlive
 - sudo apt-get install texlive-fonts-extra
-
 - wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u92-b14/jdk-8u92-linux-x64.tar.gz
 - JAVA_HOME=/prototype/jdk1.8.0_92
 - PATH=/prototype/jdk1.8.0_92/bin:$PATH
