@@ -35,6 +35,7 @@ Here are instruction on how the binary is built:
 - tar xvfz R-3.3.1.tar.gz
 - ./configure --prefix=/app/vendor/R
 - make
+- make prefix=/app/vendor/R install
 - make check-all
 
 ### Package R with existing gcc and glibc:
