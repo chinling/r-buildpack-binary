@@ -30,9 +30,10 @@ Here are instruction on how the binary is built:
 - PATH=/prototype/jdk1.8.0_92/bin:$PATH
 
 ### Install R:
+- mkdir -p /app/vendor/R
 - cd /prototype
 - tar xvfz R-3.3.1.tar.gz
-- ./configure --prefix=/home/vcap/R
+- ./configure --prefix=/app/vendor/R
 - make
 - make check-all
 
@@ -43,7 +44,7 @@ Here are instruction on how the binary is built:
 - tar xvfz R-3.1.0-binaries-20140629-2201.tar.gz -C tmp
 - cd /prototype/prepare
 - rm -rf R
-- cp -R /home/vcap/R .
+- cp -R /app/vendor/R .
 - cd /prototype/prepare
 - tar -zcvf R-3.3.1-binaries.tar.gz .
 
