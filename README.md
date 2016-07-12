@@ -47,7 +47,7 @@ Here are instruction on how the binary is built:
 - cd /prototype/prepare
 - tar -zcvf R-3.3.1-binaries.tar.gz .
 
-### Move the binary back to your Mac
+### Move the binary back to your Mac:
 - docker ps (to get the container ID)
 - docker cp <your container ID>:/prototype/prepare/R-3.3.1-binaries.tar.gz /local/proj/sandbox/docker/
 
